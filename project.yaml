@@ -2,12 +2,12 @@ basic:
     name: 'https://mentormenteedev.com/colleges'
     environments:
         production: 'https://mentormenteedev.com/colleges'
-        staging: 'https://mentormenteedev.com/colleges'
+        staging: 'https://mentormenteedev.com//nextjs/colleges'
         development: ''
     basicAuth:
         production: { user: '', password: '' }
         staging: { user: '', password: '' }
-        development: null
+        development: { user: '', password: '' }
     breakpoints:
         - 640
         - 1024
@@ -31,11 +31,23 @@ advanced:
     cookies: ''
     custom_js: ''
     custom_css: ''
-    mock_content: ''
+    mock_content:
+        - { selector: '', type: title }
     sensitivity: 15
     night_mode: false
     retina_images: false
     single_ip: false
+    login:
+        type: none
+        click_element: false
+        click_element_selector: ''
+        login_url: ''
+        username: ''
+        password: ''
+        username_selector: ''
+        password_selector: ''
+        submit_selector: ''
+        after_login_selector: ''
     performance:
         workers_production: 30
         workers_nonproduction: 10
